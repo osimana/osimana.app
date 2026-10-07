@@ -1,336 +1,342 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+cat << 'EOF' > ~/Desktop/index.html
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.s1 {font: 12.0px 'Apple Color Emoji'}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U.S.D. OSIMANA 1922 - Giovanissimi</title>
+  <style>
+    :root {
+      --yellow: #ffcc00;
+      --red: #cc0000;
+      --blue: #2563eb;
+      --dark-bg: #121212;
+      --card-bg: #1e1e1e;
+      --text: #ffffff;
+      --text-muted: #aaaaaa;
+      --success: #16a34a;
+      --warning: #d97706;
+      --danger: #dc2626;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text);
+      margin: 0;
+      padding: 12px;
+      padding-bottom: 80px;
+    }
+    header {
+      background: linear-gradient(135deg, var(--red), #880000);
+      border-bottom: 3px solid var(--yellow);
+      padding: 12px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .header-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-img {
+      width: 48px;
+      height: 58px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 50%;
+      padding: 2px;
+      border: 2px solid var(--yellow);
+    }
+    .nav-tabs {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #181818;
+      display: flex;
+      border-top: 1px solid #333;
+      z-index: 100;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 12px 2px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .tab-btn.active {
+      color: var(--yellow);
+      border-top: 3px solid var(--yellow);
+      background: #222;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 12px;
+      border-left: 4px solid var(--yellow);
+    }
+    .player-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .btn {
+      background: var(--yellow);
+      color: #000;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer;
+    }
+    .btn-sm {
+      padding: 5px 8px;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-red { background: var(--red); color: white; }
+    .btn-blue { background: var(--blue); color: white; }
+    .status-btn {
+      padding: 6px 10px;
+      border: 1px solid #444;
+      background: #2a2a2a;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .status-btn.p { background: var(--success); }
+    .status-btn.a { background: var(--danger); }
+    .status-btn.g { background: var(--warning); }
+    select {
+      width: 100%;
+      padding: 8px;
+      background: #2a2a2a;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="it"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;U.S.D. OSIMANA 1922 - Giovanissimi&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--yellow: #ffcc00;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--red: #cc0000;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--blue: #2563eb;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--dark-bg: #121212;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--card-bg: #1e1e1e;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--text: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--text-muted: #aaaaaa;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--success: #16a34a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--warning: #d97706;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--danger: #dc2626;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>* { box-sizing: border-box; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--dark-bg);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 80px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, var(--red), #880000);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 3px solid var(--yellow);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 12px rgba(0,0,0,0.5);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.header-info {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.logo-img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 48px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 58px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>object-fit: contain;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 2px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid var(--yellow);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.nav-tabs {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>bottom: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>left: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>right: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #181818;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-top: 1px solid #333;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>z-index: 100;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab-btn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 2px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab-btn.active {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--yellow);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-top: 3px solid var(--yellow);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #222;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab-content { display: none; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tab-content.active { display: block; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card-bg);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-left: 4px solid var(--yellow);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.player-row {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #2a2a2a;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: var(--yellow);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #000;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn-sm {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 5px 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn-red { background: var(--red); color: white; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn-blue { background: var(--blue); color: white; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.status-btn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 6px 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #444;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #2a2a2a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.status-btn.p { background: var(--success); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.status-btn.a { background: var(--danger); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.status-btn.g { background: var(--warning); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>select {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #2a2a2a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #444;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="header-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Logo caricato --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="logo_osimana (1).jpg" alt="Logo U.S.D. Osimana 1922" class="logo-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/a/a7/Soccerball_mask.svg';"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 style="margin:0; font-size:1.1rem; color: #fff;"&gt;U.S.D. OSIMANA 1922&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;small style="color:var(--yellow); font-weight: bold;"&gt;GIOVANISSIMI (Under 15)&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- TAB PRESENZE --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="presenze" class="tab-content active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;<span class="s1">📋</span> Appello Allenamento&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p style="color:var(--text-muted); font-size:0.85rem;"&gt;Data: 07/10/2026&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="attendance-list"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- TAB GRUPPI --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="gruppi" class="tab-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;<span class="s1">🔀</span> Gestione Gruppi&lt;/h3&gt;</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;label style="font-size:0.8rem; color:var(--text-muted);"&gt;Criterio Divisione Automatica:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;select id="split-criterion"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="ruolo"&gt;<span class="s1">⚽</span> Per Ruolo ed Equilibrio Reparti&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="voto"&gt;<span class="s1">⭐</span> Per Valutazione (Livello Pari)&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/select&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="display:flex; gap:8px; margin-bottom:12px;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn" onclick="generaGruppiAuto()"&gt;<span class="s1">⚡</span> Genera Automatici&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn" style="background:#333; color:white;" onclick="resetGruppi()"&gt;<span class="s1">🧹</span> Resetta&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="groups-container"&gt;&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h4 style="margin-top:20px; color:var(--yellow);"&gt;<span class="s1">✋</span> Spostamento &amp; Assegnazione Manuale&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="manual-assignment-list"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- TAB ROSA --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="rosa" class="tab-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;<span class="s1">⚽</span> Gestione Rosa&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn" onclick="aggiungiGiocatore()" style="margin-bottom:12px;"&gt;+ Aggiungi Giocatore&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="roster-list"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- NAVBAR BOTTOM --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="nav-tabs"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="tab-btn active" onclick="switchTab('presenze', this)"&gt;<span class="s1">📋</span> Presenze&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="tab-btn" onclick="switchTab('gruppi', this)"&gt;<span class="s1">🔀</span> Gruppi&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="tab-btn" onclick="switchTab('rosa', this)"&gt;<span class="s1">⚽</span> Rosa&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let players = [</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{ id: 1, name: "Marco Rossi", role: "POR", status: "p", rating: 8.5, group: null },</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{ id: 2, name: "Luca Bianchi", role: "DIF", status: "p", rating: 7.5, group: null },</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{ id: 3, name: "Matteo Ferrari", role: "CEN", status: "p", rating: 9.0, group: null },</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{ id: 4, name: "Alessandro Esposito", role: "ATT", status: "a", rating: 8.0, group: null },</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{ id: 5, name: "Giuseppe Ricci", role: "DIF", status: "p", rating: 8.0, group: null },</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{ id: 6, name: "Stefano Bruno", role: "ATT", status: "p", rating: 7.0, group: null }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function render() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const attList = document.getElementById('attendance-list');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const rosList = document.getElementById('roster-list');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const manList = document.getElementById('manual-assignment-list');</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>attList.innerHTML = '';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>rosList.innerHTML = '';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>manList.innerHTML = '';</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>players.forEach(p =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>attList.innerHTML += `</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="player-row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;strong&gt;${p.name}&lt;/strong&gt; &lt;small&gt;(${p.role})&lt;/small&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;button class="status-btn ${p.status==='p'?'p':''}" onclick="setStatus(${p.id},'p')"&gt;P&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;button class="status-btn ${p.status==='a'?'a':''}" onclick="setStatus(${p.id},'a')"&gt;A&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;button class="status-btn ${p.status==='g'?'g':''}" onclick="setStatus(${p.id},'g')"&gt;G&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;`;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>rosList.innerHTML += `</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="player-row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;strong&gt;${p.name}&lt;/strong&gt; &lt;small&gt;(${p.role}) - Voto: <span class="s1">⭐</span>${p.rating}&lt;/small&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="rimuoviGiocatore(${p.id})" style="background:none; border:none; color:var(--danger); cursor:pointer;"&gt;<span class="s1">🗑️</span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;`;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>if(p.status === 'p') {</p>
-<p class="p1"><span class="Apple-converted-space">          </span>manList.innerHTML += `</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="player-row"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;&lt;strong&gt;${p.name}&lt;/strong&gt; &lt;small&gt;(${p.role} - <span class="s1">⭐</span>${p.rating})&lt;/small&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn-sm btn-red" onclick="assegnaGruppoManuale(${p.id}, 'rosso')"&gt;<span class="s1">🔴</span> Rosso&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn-sm btn-blue" onclick="assegnaGruppoManuale(${p.id}, 'blu')"&gt;<span class="s1">🔵</span> Blu&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;`;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>renderGruppi();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function setStatus(id, st) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const p = players.find(x =&gt; x.id === id);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if(p) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>p.status = st;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if(st !== 'p') p.group = null;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>render();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function assegnaGruppoManuale(id, gruppo) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const p = players.find(x =&gt; x.id === id);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if(p) p.group = gruppo;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>render();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function generaGruppiAuto() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const criterio = document.getElementById('split-criterion').value;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const presenti = players.filter(p =&gt; p.status === 'p');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (criterio === 'ruolo') {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const ruoli = ['POR', 'DIF', 'CEN', 'ATT'];</p>
-<p class="p1"><span class="Apple-converted-space">        </span>let toggle = true;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>ruoli.forEach(r =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">          </span>const perRuolo = presenti.filter(p =&gt; p.role === r);</p>
-<p class="p1"><span class="Apple-converted-space">          </span>perRuolo.forEach(p =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>p.group = toggle ? 'rosso' : 'blu';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>toggle = !toggle;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>});</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">      </span>} else if (criterio === 'voto') {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const ordinati = [...presenti].sort((a, b) =&gt; b.rating - a.rating);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>ordinati.forEach((p, index) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">          </span>p.group = (index % 2 === 0) ? 'rosso' : 'blu';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>render();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function resetGruppi() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>players.forEach(p =&gt; p.group = null);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>render();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function renderGruppi() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const gRosso = players.filter(p =&gt; p.status === 'p' &amp;&amp; p.group === 'rosso');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const gBlu = players.filter(p =&gt; p.status === 'p' &amp;&amp; p.group === 'blu');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>const avgRosso = gRosso.length ? (gRosso.reduce((a,b) =&gt; a + b.rating, 0)/gRosso.length).toFixed(1) : 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const avgBlu = gBlu.length ? (gBlu.reduce((a,b) =&gt; a + b.rating, 0)/gBlu.length).toFixed(1) : 0;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('groups-container').innerHTML = `</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:flex; gap:10px;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="flex:1; background:#2a2a2a; padding:10px; border-radius:8px; border-top:3px solid var(--red);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4 style="color:var(--red); margin:0;"&gt;<span class="s1">🔴</span> Gruppo Rosso (${gRosso.length})&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;small style="color:var(--text-muted); display:block; margin-bottom:8px;"&gt;Livello: <span class="s1">⭐</span>${avgRosso}&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>${gRosso.length === 0 ? '&lt;small style="color:#666;"&gt;Nessun atleta&lt;/small&gt;' : ''}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>${gRosso.map(x =&gt; `&lt;div style="font-size:0.85rem; padding:4px 0; border-bottom:1px solid #333;"&gt;• ${x.name} &lt;small&gt;(${x.role})&lt;/small&gt;&lt;/div&gt;`).join('')}</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="flex:1; background:#2a2a2a; padding:10px; border-radius:8px; border-top:3px solid var(--blue);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4 style="color:var(--blue); margin:0;"&gt;<span class="s1">🔵</span> Gruppo Blu (${gBlu.length})&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;small style="color:var(--text-muted); display:block; margin-bottom:8px;"&gt;Livello: <span class="s1">⭐</span>${avgBlu}&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>${gBlu.length === 0 ? '&lt;small style="color:#666;"&gt;Nessun atleta&lt;/small&gt;' : ''}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>${gBlu.map(x =&gt; `&lt;div style="font-size:0.85rem; padding:4px 0; border-bottom:1px solid #333;"&gt;• ${x.name} &lt;small&gt;(${x.role})&lt;/small&gt;&lt;/div&gt;`).join('')}</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;`;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function aggiungiGiocatore() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const name = prompt("Nome e Cognome:");</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const role = prompt("Ruolo (POR, DIF, CEN, ATT):");</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const</p>
+
+  <header>
+    <div class="header-info">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Soccerball_mask.svg" alt="Logo U.S.D. Osimana 1922" class="logo-img">
+      <div>
+        <h2 style="margin:0; font-size:1.1rem; color: #fff;">U.S.D. OSIMANA 1922</h2>
+        <small style="color:var(--yellow); font-weight: bold;">GIOVANISSIMI (Under 15)</small>
+      </div>
+    </div>
+  </header>
+
+  <!-- TAB PRESENZE -->
+  <div id="presenze" class="tab-content active">
+    <div class="card">
+      <h3>📋 Appello Allenamento</h3>
+      <p style="color:var(--text-muted); font-size:0.85rem;">Data: 07/10/2026</p>
+      <div id="attendance-list"></div>
+    </div>
+  </div>
+
+  <!-- TAB GRUPPI -->
+  <div id="gruppi" class="tab-content">
+    <div class="card">
+      <h3>🔀 Gestione Gruppi</h3>
+      
+      <label style="font-size:0.8rem; color:var(--text-muted);">Criterio Divisione Automatica:</label>
+      <select id="split-criterion">
+        <option value="ruolo">⚽ Per Ruolo ed Equilibrio Reparti</option>
+        <option value="voto">⭐ Per Valutazione (Livello Pari)</option>
+      </select>
+
+      <div style="display:flex; gap:8px; margin-bottom:12px;">
+        <button class="btn" onclick="generaGruppiAuto()">⚡ Genera Automatici</button>
+        <button class="btn" style="background:#333; color:white;" onclick="resetGruppi()">🧹 Resetta</button>
+      </div>
+      
+      <div id="groups-container"></div>
+
+      <h4 style="margin-top:20px; color:var(--yellow);">✋ Spostamento & Assegnazione Manuale</h4>
+      <div id="manual-assignment-list"></div>
+    </div>
+  </div>
+
+  <!-- TAB ROSA -->
+  <div id="rosa" class="tab-content">
+    <div class="card">
+      <h3>⚽ Gestione Rosa</h3>
+      <button class="btn" onclick="aggiungiGiocatore()" style="margin-bottom:12px;">+ Aggiungi Giocatore</button>
+      <div id="roster-list"></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR BOTTOM -->
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="switchTab('presenze', this)">📋 Presenze</button>
+    <button class="tab-btn" onclick="switchTab('gruppi', this)">🔀 Gruppi</button>
+    <button class="tab-btn" onclick="switchTab('rosa', this)">⚽ Rosa</button>
+  </div>
+
+  <script>
+    let players = [
+      { id: 1, name: "Marco Rossi", role: "POR", status: "p", rating: 8.5, group: null },
+      { id: 2, name: "Luca Bianchi", role: "DIF", status: "p", rating: 7.5, group: null },
+      { id: 3, name: "Matteo Ferrari", role: "CEN", status: "p", rating: 9.0, group: null },
+      { id: 4, name: "Alessandro Esposito", role: "ATT", status: "a", rating: 8.0, group: null },
+      { id: 5, name: "Giuseppe Ricci", role: "DIF", status: "p", rating: 8.0, group: null },
+      { id: 6, name: "Stefano Bruno", role: "ATT", status: "p", rating: 7.0, group: null }
+    ];
+
+    function render() {
+      const attList = document.getElementById('attendance-list');
+      const rosList = document.getElementById('roster-list');
+      const manList = document.getElementById('manual-assignment-list');
+      
+      attList.innerHTML = '';
+      rosList.innerHTML = '';
+      manList.innerHTML = '';
+
+      players.forEach(p => {
+        attList.innerHTML += `
+          <div class="player-row">
+            <div><strong>${p.name}</strong> <small>(${p.role})</small></div>
+            <div>
+              <button class="status-btn ${p.status==='p'?'p':''}" onclick="setStatus(${p.id},'p')">P</button>
+              <button class="status-btn ${p.status==='a'?'a':''}" onclick="setStatus(${p.id},'a')">A</button>
+              <button class="status-btn ${p.status==='g'?'g':''}" onclick="setStatus(${p.id},'g')">G</button>
+            </div>
+          </div>`;
+
+        rosList.innerHTML += `
+          <div class="player-row">
+            <div><strong>${p.name}</strong> <small>(${p.role}) - Voto: ⭐${p.rating}</small></div>
+            <button onclick="rimuoviGiocatore(${p.id})" style="background:none; border:none; color:var(--danger); cursor:pointer;">🗑️</button>
+          </div>`;
+
+        if(p.status === 'p') {
+          manList.innerHTML += `
+            <div class="player-row">
+              <div><strong>${p.name}</strong> <small>(${p.role} - ⭐${p.rating})</small></div>
+              <div>
+                <button class="btn-sm btn-red" onclick="assegnaGruppoManuale(${p.id}, 'rosso')">🔴 Rosso</button>
+                <button class="btn-sm btn-blue" onclick="assegnaGruppoManuale(${p.id}, 'blu')">🔵 Blu</button>
+              </div>
+            </div>`;
+        }
+      });
+
+      renderGruppi();
+    }
+
+    function setStatus(id, st) {
+      const p = players.find(x => x.id === id);
+      if(p) {
+        p.status = st;
+        if(st !== 'p') p.group = null;
+      }
+      render();
+    }
+
+    function assegnaGruppoManuale(id, gruppo) {
+      const p = players.find(x => x.id === id);
+      if(p) p.group = gruppo;
+      render();
+    }
+
+    function generaGruppiAuto() {
+      const criterio = document.getElementById('split-criterion').value;
+      const presenti = players.filter(p => p.status === 'p');
+
+      if (criterio === 'ruolo') {
+        const ruoli = ['POR', 'DIF', 'CEN', 'ATT'];
+        let toggle = true;
+        ruoli.forEach(r => {
+          const perRuolo = presenti.filter(p => p.role === r);
+          perRuolo.forEach(p => {
+            p.group = toggle ? 'rosso' : 'blu';
+            toggle = !toggle;
+          });
+        });
+      } else if (criterio === 'voto') {
+        const ordinati = [...presenti].sort((a, b) => b.rating - a.rating);
+        ordinati.forEach((p, index) => {
+          p.group = (index % 2 === 0) ? 'rosso' : 'blu';
+        });
+      }
+      render();
+    }
+
+    function resetGruppi() {
+      players.forEach(p => p.group = null);
+      render();
+    }
+
+    function renderGruppi() {
+      const gRosso = players.filter(p => p.status === 'p' && p.group === 'rosso');
+      const gBlu = players.filter(p => p.status === 'p' && p.group === 'blu');
+
+      const avgRosso = gRosso.length ? (gRosso.reduce((a,b) => a + b.rating, 0)/gRosso.length).toFixed(1) : 0;
+      const avgBlu = gBlu.length ? (gBlu.reduce((a,b) => a + b.rating, 0)/gBlu.length).toFixed(1) : 0;
+
+      document.getElementById('groups-container').innerHTML = `
+        <div style="display:flex; gap:10px;">
+          <div style="flex:1; background:#2a2a2a; padding:10px; border-radius:8px; border-top:3px solid var(--red);">
+            <h4 style="color:var(--red); margin:0;">🔴 Gruppo Rosso (${gRosso.length})</h4>
+            <small style="color:var(--text-muted); display:block; margin-bottom:8px;">Livello: ⭐${avgRosso}</small>
+            ${gRosso.length === 0 ? '<small style="color:#666;">Nessun atleta</small>' : ''}
+            ${gRosso.map(x => `<div style="font-size:0.85rem; padding:4px 0; border-bottom:1px solid #333;">• ${x.name} <small>(${x.role})</small></div>`).join('')}
+          </div>
+          <div style="flex:1; background:#2a2a2a; padding:10px; border-radius:8px; border-top:3px solid var(--blue);">
+            <h4 style="color:var(--blue); margin:0;">🔵 Gruppo Blu (${gBlu.length})</h4>
+            <small style="color:var(--text-muted); display:block; margin-bottom:8px;">Livello: ⭐${avgBlu}</small>
+            ${gBlu.length === 0 ? '<small style="color:#666;">Nessun atleta</small>' : ''}
+            ${gBlu.map(x => `<div style="font-size:0.85rem; padding:4px 0; border-bottom:1px solid #333;">• ${x.name} <small>(${x.role})</small></div>`).join('')}
+          </div>
+        </div>`;
+    }
+
+    function aggiungiGiocatore() {
+      const name = prompt("Nome e Cognome:");
+      const role = prompt("Ruolo (POR, DIF, CEN, ATT):");
+      const rating = parseFloat(prompt("Valutazione iniziale (es. 8.0):") || "7.5");
+      if(name && role) {
+        players.push({ id: Date.now(), name, role: role.toUpperCase(), status: 'p', rating, group: null });
+        render();
+      }
+    }
+
+    function rimuoviGiocatore(id) {
+      players = players.filter(x => x.id !== id);
+      render();
+    }
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    render();
+  </script>
 </body>
 </html>
+EOF
